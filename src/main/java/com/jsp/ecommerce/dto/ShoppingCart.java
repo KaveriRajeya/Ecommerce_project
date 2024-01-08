@@ -21,5 +21,29 @@ public class ShoppingCart {
 	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 	List<Item> items;
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public List<Item> getItems() {
+		return items;
+	}
+
+	public void setItems(List<Item> items) {
+		this.items = items;
+	}
+
+	public double getTotalAmount() {
+		return totalAmount;
+	}
+
+	public void setTotalAmount(double totalAmount) {
+		this.totalAmount = totalAmount;
+	}
+
 	double totalAmount;
 }

@@ -4,12 +4,37 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Insert title here</title>
+	<style>
+		h1{
+			  text-align: center;
+			  padding-top: 200px;
+			  font-size:xx-large; 
+		      color: black;	
+		}	
+		button{
+		      margin-left: 550px;
+		      margin-top: 20px;
+		      text-decoration: none;
+		      padding: 10px;
+		      font-size:x-large;
+		       color: black;
+		}
+		button:hover{
+			 background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+
+            color: white;
+		}
+		a{
+			margin-left: 70px;
+		}
+		</style>
 </head>
 
 <body>
-	Are you Sure You want to Pay:
+	<h1>Are you Sure You want to Pay:</h1>
 
 	<button id="rzp-button1">Pay with Razorpay</button>
+     <a href="/customer/home"><button>Back</button></a>
 	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 	<script>
 		var options = {

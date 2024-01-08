@@ -257,7 +257,7 @@ public class CustomerService {
 	}
 
 	public String createOrder(Customer customer, ModelMap map) throws RazorpayException {
-		RazorpayClient client = new RazorpayClient("rzp_test_S6TGBrvbUykMqU", "Ps62zRWlFHl45Z9VXPzMN8u8");
+		RazorpayClient client = new RazorpayClient("rzp_test_JZPg3B5R7aalah", "B95BZTGQHio07Y6HBM96Lrp2");
 
 		JSONObject object = new JSONObject();
 		object.put("amount", customer.getCart().getTotalAmount() * 100);
@@ -271,7 +271,7 @@ public class CustomerService {
 		details.setDescription("Shopping Cart Payment for the products");
 		details.setImage(
 				"https://www.shutterstock.com/image-vector/mobile-application-shopping-online-on-260nw-1379237159.jpg");
-		details.setKeyCode("rzp_test_S6TGBrvbUykMqU");
+		details.setKeyCode("rzp_test_JZPg3B5R7aalah");
 		details.setName("Ecommerce Shopping");
 		details.setOrder_id(order.get("id"));
 		details.setStatus("created");

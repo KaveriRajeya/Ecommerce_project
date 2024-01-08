@@ -23,7 +23,7 @@ public class EmailLogic {
 		MimeMessageHelper helper = new MimeMessageHelper(message);
 
 		try {
-			helper.setFrom("saishkulkarni7@gmail.com", "E-Commerce");
+			helper.setFrom("bhavyashreev190@gmail.com", "E-Commerce");
 			helper.setTo(customer.getEmail());
 			helper.setSubject("Verify OTP");
 			helper.setText("<html><body><h1>Hello " + customer.getName() + "</h1><h2>Your Otp is: " + customer.getOtp()
